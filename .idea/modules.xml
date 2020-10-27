@@ -6,6 +6,13 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-00-TightlyCoupled/Spring-00-TightlyCoupled.iml" filepath="$PROJECT_DIR$/Spring-00-TightlyCoupled/Spring-00-TightlyCoupled.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-01-SpringContainer/Spring-01-SpringContainer.iml" filepath="$PROJECT_DIR$/Spring-01-SpringContainer/Spring-01-SpringContainer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-02-DI-ConstructorInjection/Spring-02-DI-ConstructorInjection.iml" filepath="$PROJECT_DIR$/Spring-02-DI-ConstructorInjection/Spring-02-DI-ConstructorInjection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-02-DI-Setterinjection/Spring-02-DI-Setterinjection.iml" filepath="$PROJECT_DIR$/Spring-02-DI-Setterinjection/Spring-02-DI-Setterinjection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-03-BeanScopeSingleton-Prototype/Spring-03-BeanScopeSingleton-Prototype.iml" filepath="$PROJECT_DIR$/Spring-03-BeanScopeSingleton-Prototype/Spring-03-BeanScopeSingleton-Prototype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-04-BeanLifeCycle/Spring-04-BeanLifeCycle.iml" filepath="$PROJECT_DIR$/Spring-04-BeanLifeCycle/Spring-04-BeanLifeCycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-05-JavaAnnotations-Autowired/Spring-05-JavaAnnotations-Autowired.iml" filepath="$PROJECT_DIR$/Spring-05-JavaAnnotations-Autowired/Spring-05-JavaAnnotations-Autowired.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-05-JavaAnnotations-Qualifier/Spring-05-JavaAnnotations-Qualifier.iml" filepath="$PROJECT_DIR$/Spring-05-JavaAnnotations-Qualifier/Spring-05-JavaAnnotations-Qualifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-05-JavaAnotations-Component/Spring-05-JavaAnotations-Component.iml" filepath="$PROJECT_DIR$/Spring-05-JavaAnotations-Component/Spring-05-JavaAnotations-Component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-05-Value/Spring-05-Value.iml" filepath="$PROJECT_DIR$/Spring-05-Value/Spring-05-Value.iml" />
     </modules>
   </component>
 </project>
