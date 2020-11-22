@@ -6,26 +6,35 @@
 </head>
 <body>
 
-<!--Text-->
-<h2 th:text="${name}"></h2>
-<h3 th:text="${course}"></h3>
-<h3 th:text="${subject}"></h3>
-<h4 th:text="${id}"></h4>
-<h4 th:text="${numbers}"></h4>
-<h4 th:text="${numbers.get(0)}"></h4>
-<h4 th:text="${birthday}"></h4>
-<h4 th:text="${'Hello ' + name}"></h4>
-<h4 th:text="${student.getFirstName()}"></h4>
-<h4 th:text="${student.id}"></h4>
-<h4 th:text="${student.firstName}"></h4>
-<h4 th:text="${student.lastName}"></h4>
+    <!--Text-->
+    <h2 th:text="${name}"></h2>
+    <h3 th:text="${course}"></h3>
+    <h3 th:text="${subject}"></h3>
+    <h4 th:text="${id}"></h4>
+    <h4 th:text="${numbers}"></h4>
+    <h4 th:text="${numbers.get(0)}"></h4>
+    <h4 th:text="${birthday}"></h4>
+    <h4 th:text="${'Hello ' + name}"></h4>
+    <h4 th:text="${student.getFirstName()}"></h4>
+    <h4 th:text="${student.id}"></h4>
+    <h4 th:text="${student.firstName}"></h4>
+    <h4 th:text="${student.lastName}"></h4>
 
-<!--Link-->
-<a th:href="@{https://cybertekschool.com}">Cybertek</a><br>
-<a th:href="@{/student/register}">Register</a>
+    <!--Link-->
+    <a th:href="@{https://cybertekschool.com}">Cybertek</a><br>
+    <a th:href="@{/student/register}">Register</a>
 
-<!--Adding parameters to Link-->
-<a th:href="@{/student/welcome(id=3)}">Link2</a>
-<a th:href="@{/student/welcome(id=${student.id})}">Link3</a>
+    <!--Adding parameters to Link-->
+    <a th:href="@{/student/welcome(id=3)}">Link2</a>
+    <a th:href="@{/student/welcome(id=${student.id})}">Link3</a>
+
+    <!--Iteration-->
+    <ul>
+        <li th:each="number: ${numbers}" th:text="${number}"></li>
+    </ul>
+
+    <!--Fragment-->
+    <div th:replace="fragments/footer :: cybertek"></div>
+
 </body>
 </html>
