@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Text-->
+<h2 th:text="${name}"></h2>
+<h3 th:text="${course}"></h3>
+<h3 th:text="${subject}"></h3>
+<h4 th:text="${id}"></h4>
+<h4 th:text="${numbers}"></h4>
+<h4 th:text="${numbers.get(0)}"></h4>
+<h4 th:text="${birthday}"></h4>
+<h4 th:text="${'Hello ' + name}"></h4>
+<h4 th:text="${student.getFirstName()}"></h4>
+<h4 th:text="${student.id}"></h4>
+<h4 th:text="${student.firstName}"></h4>
+<h4 th:text="${student.lastName}"></h4>
+
+<!--Link-->
+<a th:href="@{https://cybertekschool.com}">Cybertek</a>
+
+
+</body>
+</html>
