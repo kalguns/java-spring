@@ -18,7 +18,13 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-07-SpringBoot-Demo/Spring-07-SpringBoot-Demo.iml" filepath="$PROJECT_DIR$/Spring-07-SpringBoot-Demo/Spring-07-SpringBoot-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/Spring-08-SpringBoot-MVC-Controller.iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/Spring-08-SpringBoot-MVC-Controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf).iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Spring-08-Springboot-MVC-Form/Spring-08-Springboot-MVC-Form.iml" filepath="$PROJECT_DIR$/Spring-08-Springboot-MVC-Form/Spring-08-Springboot-MVC-Form.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Spring-07-SpringBoot-Demo/cybertek (1).iml" filepath="$PROJECT_DIR$/Spring-07-SpringBoot-Demo/cybertek (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek (2).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (3).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (3).iml" />
+>>>>>>> 6f7756b4c282e0f5839ae9d0aec21934a94dda8e
     </modules>
   </component>
 </project>
