@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="cybertek_db@localhost" uuid="881d38ce-a27c-4f1b-919f-1c1b3b2e1a39">
+    <data-source source="LOCAL" name="cybertek_db@localhost" uuid="79e97e0d-bfb0-4877-bea0-d0bcd6f5864a">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/cybertek_db</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="cybertek_db@postgres" uuid="992e9c02-3332-45c9-bf02-48a5bc1f5d3f">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://postgres:5432/cybertek_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
