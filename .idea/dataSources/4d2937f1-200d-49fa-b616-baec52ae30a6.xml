@@ -790,12 +790,12 @@ false posixrules
     <database id="2" parent="1" name="cybertek_db">
       <ObjectId>24608</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>3100</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3145</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|25250|25252|1
 sequence|table|25271|25273|1
-sequence|table|25283|25285|1
-sequence|table|25294|25296|1
+sequence|table|25405|25407|1
+sequence|table|25416|25418|1
 </Relations>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -871,7 +871,7 @@ UC/10
 </Acl>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>3101</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3146</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="18" parent="2" name="plpgsql">
@@ -978,15 +978,15 @@ UC/10
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="31" parent="17" name="departments_id_seq">
-      <ObjectId>25283</ObjectId>
+      <ObjectId>25405</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3098</StateNumber>
+      <StateNumber>3136</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
     <sequence id="32" parent="17" name="employees_id_seq">
-      <ObjectId>25294</ObjectId>
+      <ObjectId>25416</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3099</StateNumber>
+      <StateNumber>3137</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
     <sequence id="33" parent="17" name="students_id_seq">
@@ -1011,16 +1011,14 @@ UC/10
       <StateNumber>3086</StateNumber>
     </table>
     <table id="37" parent="17" name="departments">
-      <ObjectId>25285</ObjectId>
-      <Outdated>1</Outdated>
+      <ObjectId>25407</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3098</StateNumber>
+      <StateNumber>3138</StateNumber>
     </table>
     <table id="38" parent="17" name="employees">
-      <ObjectId>25296</ObjectId>
-      <Outdated>1</Outdated>
+      <ObjectId>25418</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3099</StateNumber>
+      <StateNumber>3138</StateNumber>
     </table>
     <table id="39" parent="17" name="students">
       <ObjectId>25273</ObjectId>
@@ -1174,25 +1172,31 @@ UC/10
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3098</StateNumber>
+      <StateNumber>3136</StateNumber>
       <DefaultExpression>nextval(&apos;departments_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
     <column id="61" parent="37" name="department">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3098</StateNumber>
+      <StateNumber>3136</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="62" parent="37" name="division">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3098</StateNumber>
+      <StateNumber>3136</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="63" parent="37" name="departments_pkey">
-      <ObjectId>25292</ObjectId>
-      <StateNumber>3098</StateNumber>
+    <column id="63" parent="37" name="employee_id">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3136</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="64" parent="37" name="departments_pkey">
+      <ObjectId>25414</ObjectId>
+      <StateNumber>3136</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1200,61 +1204,77 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <key id="64" parent="37" name="departments_pkey">
-      <ObjectId>25293</ObjectId>
-      <StateNumber>3098</StateNumber>
+    <key id="65" parent="37" name="departments_pkey">
+      <ObjectId>25415</ObjectId>
+      <StateNumber>3136</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>departments_pkey</UnderlyingIndexName>
     </key>
-    <column id="65" parent="38" name="id">
+    <foreign-key id="66" parent="37" name="fkc2tvlcavn7a2fb5vobctp2qqy">
+      <ObjectId>25427</ObjectId>
+      <StateNumber>3138</StateNumber>
+      <ColNames>employee_id</ColNames>
+      <RefTableId>25418</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>employees_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="67" parent="38" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3099</StateNumber>
+      <StateNumber>3137</StateNumber>
       <DefaultExpression>nextval(&apos;employees_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="66" parent="38" name="email">
+    <column id="68" parent="38" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3099</StateNumber>
+      <StateNumber>3137</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="67" parent="38" name="first_name">
+    <column id="69" parent="38" name="first_name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3099</StateNumber>
+      <StateNumber>3137</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="68" parent="38" name="gender">
+    <column id="70" parent="38" name="gender">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3099</StateNumber>
+      <StateNumber>3137</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="69" parent="38" name="hire_date">
+    <column id="71" parent="38" name="hire_date">
       <Position>5</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>3099</StateNumber>
+      <StateNumber>3137</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="70" parent="38" name="last_name">
+    <column id="72" parent="38" name="last_name">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3099</StateNumber>
+      <StateNumber>3137</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="71" parent="38" name="salary">
+    <column id="73" parent="38" name="salary">
       <Position>7</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3099</StateNumber>
+      <StateNumber>3137</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="72" parent="38" name="employees_pkey">
-      <ObjectId>25303</ObjectId>
-      <StateNumber>3099</StateNumber>
+    <column id="74" parent="38" name="department_id">
+      <Position>8</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3137</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="75" parent="38" name="employees_pkey">
+      <ObjectId>25425</ObjectId>
+      <StateNumber>3137</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1262,14 +1282,24 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <key id="73" parent="38" name="employees_pkey">
-      <ObjectId>25304</ObjectId>
-      <StateNumber>3099</StateNumber>
+    <key id="76" parent="38" name="employees_pkey">
+      <ObjectId>25426</ObjectId>
+      <StateNumber>3137</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>employees_pkey</UnderlyingIndexName>
     </key>
-    <column id="74" parent="39" name="id">
+    <foreign-key id="77" parent="38" name="fkgy4qe3dnqrm3ktd76sxp7n4c2">
+      <ObjectId>25432</ObjectId>
+      <StateNumber>3139</StateNumber>
+      <ColNames>department_id</ColNames>
+      <RefTableId>25407</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>departments</RefTableName>
+      <RefKeyName>departments_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="78" parent="39" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1277,67 +1307,67 @@ UC/10
       <DefaultExpression>nextval(&apos;students_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="75" parent="39" name="birth_date">
+    <column id="79" parent="39" name="birth_date">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="76" parent="39" name="birth_date_time">
+    <column id="80" parent="39" name="birth_date_time">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="77" parent="39" name="birth_time">
+    <column id="81" parent="39" name="birth_time">
       <Position>4</Position>
       <DataType>time|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1083</TypeId>
     </column>
-    <column id="78" parent="39" name="student_email_addres">
+    <column id="82" parent="39" name="student_email_addres">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="79" parent="39" name="student_first_name">
+    <column id="83" parent="39" name="student_first_name">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="80" parent="39" name="gender">
+    <column id="84" parent="39" name="gender">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="81" parent="39" name="student_last_name">
+    <column id="85" parent="39" name="student_last_name">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="82" parent="39" name="local_date">
+    <column id="86" parent="39" name="local_date">
       <Position>9</Position>
       <DataType>date|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="83" parent="39" name="local_date_time">
+    <column id="87" parent="39" name="local_date_time">
       <Position>10</Position>
       <DataType>timestamp|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="84" parent="39" name="local_time">
+    <column id="88" parent="39" name="local_time">
       <Position>11</Position>
       <DataType>time|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1083</TypeId>
     </column>
-    <index id="85" parent="39" name="students_pkey">
+    <index id="89" parent="39" name="students_pkey">
       <ObjectId>25280</ObjectId>
       <StateNumber>3087</StateNumber>
       <ColNames>id</ColNames>
@@ -1347,14 +1377,14 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="86" parent="39" name="students_pkey">
+    <key id="90" parent="39" name="students_pkey">
       <ObjectId>25281</ObjectId>
       <StateNumber>3087</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>students_pkey</UnderlyingIndexName>
     </key>
-    <argument id="87" parent="40">
+    <argument id="91" parent="40">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>trigger|0s</DataType>
     </argument>
