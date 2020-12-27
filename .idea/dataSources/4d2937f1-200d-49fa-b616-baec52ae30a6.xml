@@ -790,12 +790,13 @@ false posixrules
     <database id="2" parent="1" name="cybertek_db">
       <ObjectId>24608</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>3145</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3197</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|25250|25252|1
 sequence|table|25271|25273|1
-sequence|table|25405|25407|1
-sequence|table|25416|25418|1
+sequence|table|25562|25564|1
+sequence|table|25573|25575|1
+sequence|table|25584|25586|1
 </Relations>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -871,7 +872,7 @@ UC/10
 </Acl>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>3146</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3198</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="18" parent="2" name="plpgsql">
@@ -978,54 +979,65 @@ UC/10
       <DataType>bigint|0s</DataType>
     </sequence>
     <sequence id="31" parent="17" name="departments_id_seq">
-      <ObjectId>25405</ObjectId>
+      <ObjectId>25562</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3136</StateNumber>
+      <StateNumber>3190</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
     <sequence id="32" parent="17" name="employees_id_seq">
-      <ObjectId>25416</ObjectId>
+      <ObjectId>25573</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3137</StateNumber>
+      <StateNumber>3191</StateNumber>
       <DataType>integer|0s</DataType>
     </sequence>
-    <sequence id="33" parent="17" name="students_id_seq">
+    <sequence id="33" parent="17" name="regions_id_seq">
+      <ObjectId>25584</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3192</StateNumber>
+      <DataType>integer|0s</DataType>
+    </sequence>
+    <sequence id="34" parent="17" name="students_id_seq">
       <ObjectId>25271</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>3087</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="34" parent="17" name="cars">
+    <table id="35" parent="17" name="cars">
       <ObjectId>25252</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>3084</StateNumber>
     </table>
-    <table id="35" parent="17" name="credit_account">
+    <table id="36" parent="17" name="credit_account">
       <ObjectId>25261</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>3085</StateNumber>
     </table>
-    <table id="36" parent="17" name="debit_account">
+    <table id="37" parent="17" name="debit_account">
       <ObjectId>25266</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>3086</StateNumber>
     </table>
-    <table id="37" parent="17" name="departments">
-      <ObjectId>25407</ObjectId>
+    <table id="38" parent="17" name="departments">
+      <ObjectId>25564</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3138</StateNumber>
+      <StateNumber>3193</StateNumber>
     </table>
-    <table id="38" parent="17" name="employees">
-      <ObjectId>25418</ObjectId>
+    <table id="39" parent="17" name="employees">
+      <ObjectId>25575</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3138</StateNumber>
+      <StateNumber>3193</StateNumber>
     </table>
-    <table id="39" parent="17" name="students">
+    <table id="40" parent="17" name="regions">
+      <ObjectId>25586</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3194</StateNumber>
+    </table>
+    <table id="41" parent="17" name="students">
       <ObjectId>25273</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>3087</StateNumber>
     </table>
-    <routine id="40" parent="17" name="log_last_name_changes">
+    <routine id="42" parent="17" name="log_last_name_changes">
       <ObjectId>24703</ObjectId>
       <Owner>postgres</Owner>
       <SourceTextLength>193</SourceTextLength>
@@ -1035,7 +1047,7 @@ UC/10
       <RoutineKind>function</RoutineKind>
       <Rows>0.0</Rows>
     </routine>
-    <column id="41" parent="34" name="id">
+    <column id="43" parent="35" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1043,19 +1055,19 @@ UC/10
       <DefaultExpression>nextval(&apos;cars_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="42" parent="34" name="make">
+    <column id="44" parent="35" name="make">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3084</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="43" parent="34" name="model">
+    <column id="45" parent="35" name="model">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3084</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="44" parent="34" name="cars_pkey">
+    <index id="46" parent="35" name="cars_pkey">
       <ObjectId>25259</ObjectId>
       <StateNumber>3084</StateNumber>
       <ColNames>id</ColNames>
@@ -1065,45 +1077,45 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="45" parent="34" name="cars_pkey">
+    <key id="47" parent="35" name="cars_pkey">
       <ObjectId>25260</ObjectId>
       <StateNumber>3084</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>cars_pkey</UnderlyingIndexName>
     </key>
-    <column id="46" parent="35" name="id">
+    <column id="48" parent="36" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>3085</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="47" parent="35" name="balance">
+    <column id="49" parent="36" name="balance">
       <Position>2</Position>
       <DataType>numeric(19,2 digit)|0s</DataType>
       <StateNumber>3085</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="48" parent="35" name="interest_rate">
+    <column id="50" parent="36" name="interest_rate">
       <Position>3</Position>
       <DataType>numeric(19,2 digit)|0s</DataType>
       <StateNumber>3085</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="49" parent="35" name="owner">
+    <column id="51" parent="36" name="owner">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3085</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="50" parent="35" name="credit_limit">
+    <column id="52" parent="36" name="credit_limit">
       <Position>5</Position>
       <DataType>numeric(19,2 digit)|0s</DataType>
       <StateNumber>3085</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="51" parent="35" name="credit_account_pkey">
+    <index id="53" parent="36" name="credit_account_pkey">
       <ObjectId>25264</ObjectId>
       <StateNumber>3085</StateNumber>
       <ColNames>id</ColNames>
@@ -1113,45 +1125,45 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="52" parent="35" name="credit_account_pkey">
+    <key id="54" parent="36" name="credit_account_pkey">
       <ObjectId>25265</ObjectId>
       <StateNumber>3085</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>credit_account_pkey</UnderlyingIndexName>
     </key>
-    <column id="53" parent="36" name="id">
+    <column id="55" parent="37" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>3086</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="54" parent="36" name="balance">
+    <column id="56" parent="37" name="balance">
       <Position>2</Position>
       <DataType>numeric(19,2 digit)|0s</DataType>
       <StateNumber>3086</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="55" parent="36" name="interest_rate">
+    <column id="57" parent="37" name="interest_rate">
       <Position>3</Position>
       <DataType>numeric(19,2 digit)|0s</DataType>
       <StateNumber>3086</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="56" parent="36" name="owner">
+    <column id="58" parent="37" name="owner">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3086</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="57" parent="36" name="over_draft_fee">
+    <column id="59" parent="37" name="over_draft_fee">
       <Position>5</Position>
       <DataType>numeric(19,2 digit)|0s</DataType>
       <StateNumber>3086</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="58" parent="36" name="debit_account_pkey">
+    <index id="60" parent="37" name="debit_account_pkey">
       <ObjectId>25269</ObjectId>
       <StateNumber>3086</StateNumber>
       <ColNames>id</ColNames>
@@ -1161,42 +1173,36 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="59" parent="36" name="debit_account_pkey">
+    <key id="61" parent="37" name="debit_account_pkey">
       <ObjectId>25270</ObjectId>
       <StateNumber>3086</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>debit_account_pkey</UnderlyingIndexName>
     </key>
-    <column id="60" parent="37" name="id">
+    <column id="62" parent="38" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3136</StateNumber>
+      <StateNumber>3190</StateNumber>
       <DefaultExpression>nextval(&apos;departments_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="61" parent="37" name="department">
+    <column id="63" parent="38" name="department">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3136</StateNumber>
+      <StateNumber>3190</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="62" parent="37" name="division">
+    <column id="64" parent="38" name="division">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3136</StateNumber>
+      <StateNumber>3190</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="63" parent="37" name="employee_id">
-      <Position>4</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>3136</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="64" parent="37" name="departments_pkey">
-      <ObjectId>25414</ObjectId>
-      <StateNumber>3136</StateNumber>
+    <index id="65" parent="38" name="departments_pkey">
+      <ObjectId>25571</ObjectId>
+      <StateNumber>3190</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1204,77 +1210,73 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <key id="65" parent="37" name="departments_pkey">
-      <ObjectId>25415</ObjectId>
-      <StateNumber>3136</StateNumber>
+    <key id="66" parent="38" name="departments_pkey">
+      <ObjectId>25572</ObjectId>
+      <StateNumber>3190</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>departments_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="66" parent="37" name="fkc2tvlcavn7a2fb5vobctp2qqy">
-      <ObjectId>25427</ObjectId>
-      <StateNumber>3138</StateNumber>
-      <ColNames>employee_id</ColNames>
-      <RefTableId>25418</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>employees</RefTableName>
-      <RefKeyName>employees_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="67" parent="38" name="id">
+    <column id="67" parent="39" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3137</StateNumber>
+      <StateNumber>3191</StateNumber>
       <DefaultExpression>nextval(&apos;employees_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="68" parent="38" name="email">
+    <column id="68" parent="39" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3137</StateNumber>
+      <StateNumber>3191</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="69" parent="38" name="first_name">
+    <column id="69" parent="39" name="first_name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3137</StateNumber>
+      <StateNumber>3191</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="70" parent="38" name="gender">
+    <column id="70" parent="39" name="gender">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3137</StateNumber>
+      <StateNumber>3191</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="71" parent="38" name="hire_date">
+    <column id="71" parent="39" name="hire_date">
       <Position>5</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>3137</StateNumber>
+      <StateNumber>3191</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="72" parent="38" name="last_name">
+    <column id="72" parent="39" name="last_name">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>3137</StateNumber>
+      <StateNumber>3191</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="73" parent="38" name="salary">
+    <column id="73" parent="39" name="salary">
       <Position>7</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3137</StateNumber>
+      <StateNumber>3191</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="74" parent="38" name="department_id">
+    <column id="74" parent="39" name="department_id">
       <Position>8</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>3137</StateNumber>
+      <StateNumber>3191</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="75" parent="38" name="employees_pkey">
-      <ObjectId>25425</ObjectId>
-      <StateNumber>3137</StateNumber>
+    <column id="75" parent="39" name="region_id">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>3191</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="76" parent="39" name="employees_pkey">
+      <ObjectId>25582</ObjectId>
+      <StateNumber>3191</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1282,24 +1284,71 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <key id="76" parent="38" name="employees_pkey">
-      <ObjectId>25426</ObjectId>
-      <StateNumber>3137</StateNumber>
+    <key id="77" parent="39" name="employees_pkey">
+      <ObjectId>25583</ObjectId>
+      <StateNumber>3191</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>employees_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="77" parent="38" name="fkgy4qe3dnqrm3ktd76sxp7n4c2">
-      <ObjectId>25432</ObjectId>
-      <StateNumber>3139</StateNumber>
+    <foreign-key id="78" parent="39" name="fkgy4qe3dnqrm3ktd76sxp7n4c2">
+      <ObjectId>25595</ObjectId>
+      <StateNumber>3193</StateNumber>
       <ColNames>department_id</ColNames>
-      <RefTableId>25407</RefTableId>
+      <RefTableId>25564</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>departments</RefTableName>
       <RefKeyName>departments_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="78" parent="39" name="id">
+    <foreign-key id="79" parent="39" name="fk5mear4x539nfkn4jpuuvfajk4">
+      <ObjectId>25600</ObjectId>
+      <StateNumber>3194</StateNumber>
+      <ColNames>region_id</ColNames>
+      <RefTableId>25586</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>regions</RefTableName>
+      <RefKeyName>regions_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="80" parent="40" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3192</StateNumber>
+      <DefaultExpression>nextval(&apos;regions_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="81" parent="40" name="country">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>3192</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="82" parent="40" name="region">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>3192</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="83" parent="40" name="regions_pkey">
+      <ObjectId>25593</ObjectId>
+      <StateNumber>3192</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <key id="84" parent="40" name="regions_pkey">
+      <ObjectId>25594</ObjectId>
+      <StateNumber>3192</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>regions_pkey</UnderlyingIndexName>
+    </key>
+    <column id="85" parent="41" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1307,67 +1356,67 @@ UC/10
       <DefaultExpression>nextval(&apos;students_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="79" parent="39" name="birth_date">
+    <column id="86" parent="41" name="birth_date">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="80" parent="39" name="birth_date_time">
+    <column id="87" parent="41" name="birth_date_time">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="81" parent="39" name="birth_time">
+    <column id="88" parent="41" name="birth_time">
       <Position>4</Position>
       <DataType>time|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1083</TypeId>
     </column>
-    <column id="82" parent="39" name="student_email_addres">
+    <column id="89" parent="41" name="student_email_addres">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="83" parent="39" name="student_first_name">
+    <column id="90" parent="41" name="student_first_name">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="84" parent="39" name="gender">
+    <column id="91" parent="41" name="gender">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="85" parent="39" name="student_last_name">
+    <column id="92" parent="41" name="student_last_name">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="86" parent="39" name="local_date">
+    <column id="93" parent="41" name="local_date">
       <Position>9</Position>
       <DataType>date|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="87" parent="39" name="local_date_time">
+    <column id="94" parent="41" name="local_date_time">
       <Position>10</Position>
       <DataType>timestamp|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="88" parent="39" name="local_time">
+    <column id="95" parent="41" name="local_time">
       <Position>11</Position>
       <DataType>time|0s</DataType>
       <StateNumber>3087</StateNumber>
       <TypeId>1083</TypeId>
     </column>
-    <index id="89" parent="39" name="students_pkey">
+    <index id="96" parent="41" name="students_pkey">
       <ObjectId>25280</ObjectId>
       <StateNumber>3087</StateNumber>
       <ColNames>id</ColNames>
@@ -1377,14 +1426,14 @@ UC/10
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
     </index>
-    <key id="90" parent="39" name="students_pkey">
+    <key id="97" parent="41" name="students_pkey">
       <ObjectId>25281</ObjectId>
       <StateNumber>3087</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>students_pkey</UnderlyingIndexName>
     </key>
-    <argument id="91" parent="40">
+    <argument id="98" parent="42">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>trigger|0s</DataType>
     </argument>
