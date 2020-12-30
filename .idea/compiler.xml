@@ -15,6 +15,7 @@
         <module name="Spring-08-SpringBoot-MVC-Controller" />
         <module name="Spring-09-ORM-Mapping-ManyToOne" />
         <module name="Spring-09-ORM-Mapping-OneToOne" />
+        <module name="Spring-09-ORM-OneToMany" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,6 +40,7 @@
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToOne" target="11" />
+      <module name="Spring-09-ORM-OneToMany" target="11" />
       <module name="Spring-09-ORM-TableCreation" target="11" />
       <module name="Spring-09-ORM-TableCreation2" target="11" />
     </bytecodeTargetLevel>
@@ -50,6 +52,7 @@
       <module name="Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToOne" options="-parameters" />
+      <module name="Spring-09-ORM-OneToMany" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation2" options="-parameters" />
       <module name="cybertek (1)" options="-parameters" />
