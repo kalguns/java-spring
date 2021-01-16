@@ -30,6 +30,7 @@ public class Movie extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private MovieType type;
 
+    @Enumerated(EnumType.STRING)
     private MovieState state;
 
     private BigDecimal price;

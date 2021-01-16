@@ -8,21 +8,21 @@ import javax.persistence.Entity;
 import java.math.BigDecimal;
 
 @Entity
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
-public class Location extends BaseEntity {
+public class Location extends BaseEntity{
 
     private String name;
     private BigDecimal latitude;
     private BigDecimal langitude;
-    private Integer postalCode;
+    private String postalCode;
     private String country;
     private String state;
     private String city;
     private String address;
 
-    public Location(String name, BigDecimal latitude, BigDecimal langitude, Integer postalCode, String country, String state, String city, String address) {
+    public Location(String name, BigDecimal latitude, BigDecimal langitude, String postalCode, String country, String state, String city, String address) {
         this.name = name;
         this.latitude = latitude;
         this.langitude = langitude;

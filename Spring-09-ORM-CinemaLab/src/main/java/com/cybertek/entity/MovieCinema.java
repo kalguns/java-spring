@@ -17,14 +17,14 @@ public class MovieCinema extends BaseEntity{
     @JoinColumn(name = "movie_id")
     private Movie movie;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "cinema_id")
     private Cinema cinema;
 
     @Column(columnDefinition = "TIMESTAMP")
-    private LocalDateTime localDateTime;
+    private LocalDateTime dateTime;
 
-    public MovieCinema(LocalDateTime localDateTime) {
-        this.localDateTime = localDateTime;
+    public MovieCinema(LocalDateTime dateTime) {
+        this.dateTime = dateTime;
     }
 }

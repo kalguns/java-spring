@@ -3,10 +3,9 @@ package com.cybertek.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.catalina.User;
 
 import javax.persistence.*;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -21,19 +20,18 @@ public class Ticket extends BaseEntity{
     private Integer rowNumber;
 
     @Column(columnDefinition = "TIMESTAMP")
-    private LocalTime localDateTime;
+    private LocalDateTime dateTime;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "movie_cinema_id")
     private MovieCinema movieCinema;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_account_id")
     private User user;
 
-    public Ticket(Integer seatNumber, Integer rowNumber, LocalTime localDateTime) {
+    public Ticket(Integer seatNumber, Integer rowNumber, LocalDateTime dateTime) {
         this.seatNumber = seatNumber;
         this.rowNumber = rowNumber;
-        this.localDateTime = localDateTime;
+        this.dateTime = dateTime;
     }
 }

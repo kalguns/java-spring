@@ -3,8 +3,6 @@ package com.cybertek.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.repository.NoRepositoryBean;
-
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
@@ -13,7 +11,7 @@ import javax.persistence.ManyToOne;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Cinema extends BaseEntity{
+public class Cinema extends BaseEntity {
 
     private String name;
     private String sponsoredName;
