@@ -1,6 +1,7 @@
 package com.cybertek;
 
 import com.cybertek.repository.DepartmentRepository;
+import com.cybertek.repository.EmployeeRepository;
 import com.cybertek.repository.RegionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -15,6 +16,8 @@ public class DrivedqueriApplication {
     RegionRepository regionRepository;
     @Autowired
     DepartmentRepository departmentRepository;
+    @Autowired
+    EmployeeRepository employeeRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(DrivedqueriApplication.class, args);
@@ -43,6 +46,17 @@ public class DrivedqueriApplication {
         System.out.println("findByDepartment:" + departmentRepository.findByDivision("Outdoors"));
         System.out.println("findByDepartment:" + departmentRepository.findByDivisionEndingWith("ics"));
         System.out.println("findByDepartment:" + departmentRepository.findDistinctTop3ByDivisionContaining("Hea"));
+
+
+        System.out.println("----------------Region end--------------");
+    }
+
+    @PostConstruct
+    public void testEmployees(){
+
+        System.out.println("----------------Region start--------------");
+
+        System.out.println(employeeRepository.findByEmailIsNull() );
 
 
         System.out.println("----------------Region end--------------");
