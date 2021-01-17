@@ -1,5 +1,6 @@
 package com.cybertek;
 
+import com.cybertek.repository.DepartmentRepository;
 import com.cybertek.repository.RegionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -12,6 +13,8 @@ public class DrivedqueriApplication {
 
     @Autowired
     RegionRepository regionRepository;
+    @Autowired
+    DepartmentRepository departmentRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(DrivedqueriApplication.class, args);
@@ -27,6 +30,20 @@ public class DrivedqueriApplication {
         System.out.println("findByCountryContaining:" + regionRepository.findByCountryContaining("United"));
         System.out.println("findByCountryContainingOrderByCountry:" + regionRepository.findByCountryContainingOrderByRegion("Asia"));
         System.out.println("findTopBy2ByCountry:" + regionRepository.findTop2ByCountry("Canada"));
+
+        System.out.println("----------------Region end--------------");
+    }
+
+    @PostConstruct
+    public void testDepartments(){
+
+        System.out.println("----------------Region start--------------");
+
+        System.out.println("findByDepartment:" + departmentRepository.findByDepartment("Toys"));
+        System.out.println("findByDepartment:" + departmentRepository.findByDivision("Outdoors"));
+        System.out.println("findByDepartment:" + departmentRepository.findByDivisionEndingWith("ics"));
+        System.out.println("findByDepartment:" + departmentRepository.findDistinctTop3ByDivisionContaining("Hea"));
+
 
         System.out.println("----------------Region end--------------");
     }
