@@ -22,5 +22,6 @@ public class JpqlApplication {
         System.out.println(employeeRepository.getEmployeeDetail());
         System.out.println(employeeRepository.getEmployeeSalary());
         System.out.println(employeeRepository.getEmployeeEmail("btrow5@technorati.com").get());
+        employeeRepository.updateEmployeeJPQL(1);
     }
 }
