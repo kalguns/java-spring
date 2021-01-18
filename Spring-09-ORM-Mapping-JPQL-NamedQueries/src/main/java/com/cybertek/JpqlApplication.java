@@ -18,8 +18,9 @@ public class JpqlApplication {
     }
 
     @PostConstruct
-    public void testEmploee(){
+    public void testEmployee(){
         System.out.println(employeeRepository.getEmployeeDetail());
         System.out.println(employeeRepository.getEmployeeSalary());
+        System.out.println(employeeRepository.getEmployeeEmail("btrow5@technorati.com").get());
     }
 }
