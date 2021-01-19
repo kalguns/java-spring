@@ -23,6 +23,7 @@ public class JpqlApplication {
         System.out.println(employeeRepository.getEmployeeSalary());
         System.out.println(employeeRepository.getEmployeeEmail("btrow5@technorati.com").get());
         employeeRepository.updateEmployeeJPQL(1);
-        employeeRepository.retrieveEmployeeSalaryGraterThan(1000000);
+
+        System.out.println(employeeRepository.retrieveEmployeeSalaryGraterThan(100000));
     }
 }
