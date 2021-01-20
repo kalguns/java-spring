@@ -58,7 +58,6 @@ public class DrivedqueriApplication {
 
         System.out.println(employeeRepository.findByEmailIsNull() );
 
-
         System.out.println("----------------Region end--------------");
     }
 }

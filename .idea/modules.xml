@@ -8,6 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-07-SpringBoot-Demo/Spring-07-SpringBoot-Demo.iml" filepath="$PROJECT_DIR$/Spring-07-SpringBoot-Demo/Spring-07-SpringBoot-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/Spring-08-SpringBoot-MVC-Controller.iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/Spring-08-SpringBoot-MVC-Controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-CinemaLab/Spring-09-ORM-CinemaLab.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-CinemaLab/Spring-09-ORM-CinemaLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-DrivedQueries/Spring-09-ORM-DrivedQueries.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-DrivedQueries/Spring-09-ORM-DrivedQueries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-NamedQueries/Spring-09-ORM-Mapping-JPQL-NamedQueries.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-NamedQueries/Spring-09-ORM-Mapping-JPQL-NamedQueries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMany/Spring-09-ORM-Mapping-ManyToMany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMany/Spring-09-ORM-Mapping-ManyToMany.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToOne/Spring-09-ORM-Mapping-ManyToOne.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToOne/Spring-09-ORM-Mapping-ManyToOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-OneToMany/Spring-09-ORM-OneToMany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-OneToMany/Spring-09-ORM-OneToMany.iml" />
