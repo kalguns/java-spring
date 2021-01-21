@@ -1,19 +1,37 @@
 package com.cybertek.repository;
 
 import com.cybertek.entity.Movie;
+import com.cybertek.enums.MovieState;
+import com.cybertek.enums.MovieType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface MovieRepository extends JpaRepository<Movie,Long> {
     // ------------------- DERIVED QUERIES ------------------- //
     //Write a derived query to read a movie with a name
+    Optional<Movie> findByName(String name);
+
     //Write a derived query to list all movies between a range of prices
+    List<Movie> findAllByPriceBetween(BigDecimal price1,BigDecimal price2);
+
     //Write a derived query to list all movies where duration exists in the specific list of duration
+    List<Movie> findAllByDurationIn(List<Integer> durations);
+
     //Write a derived query to list all movies with higher than a specific release date
+    List<Movie> findAllByReleaseDateAfter(LocalDate releaseDate);
+
     //Write a derived query to list all movies with a specific state and type
+    List<Movie> findAllByStateAndState(MovieState movieState, MovieType movieType);
     // ------------------- JPQL QUERIES ------------------- //
     //Write a JPQL query to list all movies between a range of prices
+
+
     //Write a JPQL query that returns all movie names
     // ------------------- Native QUERIES ------------------- //
     //Write a native query that returns a movie by name
