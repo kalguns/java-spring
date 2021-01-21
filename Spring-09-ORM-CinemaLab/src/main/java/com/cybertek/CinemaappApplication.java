@@ -28,5 +28,6 @@ public class CinemaappApplication {
         System.out.println(accountRepository.fetchAdminUsers());
         System.out.println(cinemaRepository.distinctBySponsoredName());
         System.out.println(movieCinemaRepository.countAllByCinemaId(3L));
+        System.out.println(movieCinemaRepository.retrieveAllByLocationName("United States"));
     }
 }
