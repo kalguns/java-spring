@@ -18,6 +18,15 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation/Spring-09-ORM-TableCreation.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-TableCreation/Spring-09-ORM-TableCreation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation2/Spring-09-ORM-TableCreation2.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-TableCreation2/Spring-09-ORM-TableCreation2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-SQL-Review/Spring-09-SQL-Review.iml" filepath="$PROJECT_DIR$/Spring-09-SQL-Review/Spring-09-SQL-Review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-CinemaLab/cinemaapp.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-CinemaLab/cinemaapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation/cybertek.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-TableCreation/cybertek.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-DrivedQueries/drivedqueries.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-DrivedQueries/drivedqueries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-NamedQueries/jpql.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-JPQL-NamedQueries/jpql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMany/manytomany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToMany/manytomany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/orm2.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/orm2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToOne/orm3.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToOne/orm3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation2/ormconfig.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-TableCreation2/ormconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-OneToMany/ormonetomany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-OneToMany/ormonetomany.iml" />
     </modules>
   </component>
 </project>
